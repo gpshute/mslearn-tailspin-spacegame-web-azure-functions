@@ -29,7 +29,7 @@ stages:
       displayName: 'Run npm install'
       inputs:
         verbose: false
-    - task: WhiteSource Bolt@20
+    - task: WhiteSource Bolt@19
       displayName: 'WhiteSource Bolt'
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
       displayName: 'Compile Sass assets'
